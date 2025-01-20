@@ -48,7 +48,8 @@
               Added
             </div>
   
-            <button class="add-to-cart-button  js-add-to-cart button-primary">
+            <button class="add-to-cart-button  js-add-to-cart button-primary"
+             data-product-name="${product.name}">
               Add to Cart
             </button>
           </div>`;
