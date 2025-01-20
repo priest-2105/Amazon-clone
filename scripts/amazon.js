@@ -1,8 +1,4 @@
 
-
-
-    // function displayProducts(products){
-
         let productsHTML = '';
 
         products.forEach(product => {
@@ -52,7 +48,7 @@
               Added
             </div>
   
-            <button class="add-to-cart-button button-primary">
+            <button class="add-to-cart-button  js-add-to-cart button-primary">
               Add to Cart
             </button>
           </div>`;
@@ -60,12 +56,13 @@
         });
 
 
-        console.log(productsHTML);
+
         document.querySelector('.js-products-grid').innerHTML = productsHTML;
-        // appendChild(productsHTML);
-
-
+        document.querySelectorAll('.js-add-to-cart').forEach((button) => {
+            button.addEventListener('click', () => {
+                console.log('Added');
+                
+            });
+        })
         
-
-    // }
  
