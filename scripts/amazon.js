@@ -3,7 +3,7 @@ console.log('Hello');
 
 const products = [
     {
-        image: 'images/products/athletic-cotton-socks-6-pairs.jpg',
+        image: './images/products/athletic-cotton-socks-6-pairs.jpg',
         name: '  Black and Gray Athletic Cotton Socks - 6 Pairs',
         rating: {
             stars: 4.5,
@@ -12,7 +12,7 @@ const products = [
         priceCents: 1090, 
     }, 
     {
-        image: 'images/products/intermediate-composite-basketball.jpg',
+        image: './images/products/intermediate-composite-basketball.jpg',
         name: '   Intermediate Size Basketball',
         rating: {
             stars: 4,
@@ -21,7 +21,7 @@ const products = [
         priceCents: 2095,
     }, 
     {
-        image: 'images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg',
+        image: './images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg',
         name: '  Adults Plain Cotton T-Shirt - 2 Pack',
         rating: {
             stars: 4.5,
@@ -34,9 +34,11 @@ const products = [
 
     // function displayProducts(products){
 
+        let productsHTML = '';
+
         products.forEach(product => {
 
-            const html = `
+            productsHTML += `
              <div class="product-container">
             <div class="product-image-container">
               <img class="product-image"
@@ -56,7 +58,7 @@ const products = [
             </div>
   
             <div class="product-price">
-            ${product.priceCents / 1000}
+            ${(product.priceCents / 100).toFixed(2)}
             </div>
   
             <div class="product-quantity-container">
@@ -86,17 +88,13 @@ const products = [
             </button>
           </div>`;
 
-          const productEl = document.createElement('div');
-           productEl.classList.add('product-container');
-          document.querySelector('.products-grid').appendChild(html);
-
-
-        //    productEl.appendChild
-
-
-            console.log(html);
-
         });
+
+
+        console.log(productsHTML);
+        document.querySelector('.js-products-grid').innerHTML = productsHTML;
+        // appendChild(productsHTML);
+
 
         
 
