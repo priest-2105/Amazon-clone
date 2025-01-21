@@ -656,5 +656,37 @@ const products = [
       "apparel",
       "mens"
     ]
+  },
+  {
+    id: "bc28v898yh9-m323-40kmim3f-b7cf-57fde044a955",
+    image: "backpack.jpg",
+    name: "Back Pack",
+    rating: {
+      stars: 4.5,
+      count: 3157
+    },
+    priceCents: 1289,
+    keywords: [
+      "sweaters",
+      "hoodies",
+      "apparel",
+      "mens"
+    ]
+  },
+  {
+    id: "bc2kyhbukby777-vhk hnnn-f-57fde044a955",
+    image: "images/products/umbrella.jpg",
+    name: "Umbrella",
+    rating: {
+      stars: 3,
+      count: 234
+    },
+    priceCents: 3450,
+    keywords: [
+      "sweaters",
+      "hoodies",
+      "apparel",
+      "mens"
+    ]
   }
 ];

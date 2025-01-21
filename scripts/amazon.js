@@ -66,6 +66,10 @@
                 const selectedQuantity = Number(document.querySelector(`.js-quantity-selector-${productId}`).value);
 
                 
+                const selectedProduct = { productId , selectedQuantity };
+
+                // const { productId: id , selectedQuantity: quantity } = selectedProduct;
+                
                 
                 let matchingItem;
 
@@ -76,13 +80,14 @@
                 });
 
                 if (matchingItem) {
-                    matchingItem.quantity += selectedQuantity;
+                    matchingItem.quantity += selectedProduct.selectedQuantity;
                 }else{
-                    cart.push({
-                        productId: productId,
-                        quantity: selectedQuantity
-                    });
-                }
+                  cart.push({
+                    productId: selectedProduct.productId,
+                    quantity: selectedProduct.selectedQuantity,
+                });
+                }console.log(selectedProduct);
+                
                 
                 let cartQuantity = 0
 
