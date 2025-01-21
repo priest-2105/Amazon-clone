@@ -80,18 +80,16 @@
                         quantity: 1
                     });
                 }
-                console.log(cart);
-                getcartQuantity();
+                
+                let cartQuantity = 0
+
+                cart.forEach((item) => {
+                    cartQuantity += item.quantity;
+                });
+
+                document.querySelector('.js-cart-quantity').innerHTML = cartQuantity;
+
+
             });
         })
         
-
-        function getcartQuantity(){
-
-            const cartQuanity = cart.length;
-
-            document.querySelector('.js-cart-quantity').innerHTML = cartQuanity;
-
-        }
-
- 
