@@ -81,7 +81,17 @@
                     });
                 }
                 console.log(cart);
+                getcartQuantity();
             });
         })
         
+
+        function getcartQuantity(){
+
+            const cartQuanity = cart.length;
+
+            document.querySelector('.js-cart-quantity').innerHTML = cartQuanity;
+
+        }
+
  
