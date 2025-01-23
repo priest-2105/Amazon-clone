@@ -27,10 +27,7 @@ export const products = [
       "sports",
       "basketballs"
     ]
-  },
-
-
-  
+  }, 
   {
     id: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e",
     image: "images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg",
