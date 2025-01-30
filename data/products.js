@@ -279,22 +279,6 @@ export const products = [
     ]
   },
   {
-    id: "a82c6bac-3067-4e68-a5ba-d827ac0be010",
-    image: "images/products/straw-sunhat.webp",
-    name: "Straw Lifeguard Sun Hat",
-    rating: {
-      stars: 4,
-      count: 215
-    },
-    priceCents: 2200,
-    keywords: [
-      "hats",
-      "straw hats",
-      "summer",
-      "apparel"
-    ]
-  },
-  {
     id: "e4f64a65-1377-42bc-89a5-e572d19252e2",
     image: "images/products/sky-flower-stud-earrings.webp",
     name: "Sterling Silver Sky Flower Stud Earrings",
