@@ -1,28 +1,4 @@
-body {
-  font-family: Roboto, Arial;
-  color: rgb(33, 33, 33);
-  /* The <body> element has a default margin of 8px
-     on all sides. This removes the default margins. */
-  margin: 0;
-}
-
-/* <p> elements have a default margin on the top
-   and bottom. This removes the default margins. */
-p {
-  margin: 0;
-}
-
-button {
-  cursor: pointer;
-}
-
-select {
-  cursor: pointer;
-}
-
-input, select, button {
-  font-family: Roboto, Arial;
-}
+ 
 
 .button-primary {
   color: rgb(33, 33, 33);
