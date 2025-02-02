@@ -1,4 +1,4 @@
-const products = [
+export const products = [
   {
     id: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
     image: "images/products/athletic-cotton-socks-6-pairs.jpg",
@@ -27,7 +27,7 @@ const products = [
       "sports",
       "basketballs"
     ]
-  },
+  }, 
   {
     id: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e",
     image: "images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg",
@@ -650,6 +650,38 @@ const products = [
       count: 3157
     },
     priceCents: 2400,
+    keywords: [
+      "sweaters",
+      "hoodies",
+      "apparel",
+      "mens"
+    ]
+  },
+  {
+    id: "bc28v898yh9-m323-40kmim3f-b7cf-57fde044a955",
+    image: "backpack.jpg",
+    name: "Back Pack",
+    rating: {
+      stars: 4.5,
+      count: 3157
+    },
+    priceCents: 1289,
+    keywords: [
+      "sweaters",
+      "hoodies",
+      "apparel",
+      "mens"
+    ]
+  },
+  {
+    id: "bc2kyhbukby777-vhk hnnn-f-57fde044a955",
+    image: "images/products/umbrella.jpg",
+    name: "Umbrella",
+    rating: {
+      stars: 3,
+      count: 234
+    },
+    priceCents: 3450,
     keywords: [
       "sweaters",
       "hoodies",
