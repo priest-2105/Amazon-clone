@@ -93,3 +93,7 @@ const cart = {
 
   
 cart.loadFromStorage();
+
+
+cart.addToCart();
+console.log(cart);
